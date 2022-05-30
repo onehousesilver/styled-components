@@ -4,7 +4,7 @@ const Parents = styled.div`
   display: flex;
 `;
 
-const Child = styled.div`
+const Box = styled.div`
   background-color: ${(props) => props.bgColor};
   width: 100px;
   height: 100px;
@@ -14,11 +14,19 @@ const Text = styled.span`
   color: white;
   font-size: 16px;
 `;
+
+const Circle = styled.div`
+  background-color: ${(props) => props.bgColor};
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+`;
+
 function App() {
   return (
     <Parents>
-      <Child bgColor="teal" />
-      <Child bgColor="tomato" />
+      <Box bgColor="teal" />
+      <Circle bgColor="tomato" />
     </Parents>
   );
 }
