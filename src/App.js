@@ -15,6 +15,7 @@ function App() {
   return (
     <Parents>
       <Btn> Log in </Btn>
+      <Btn as="a" href="/"> Log in </Btn>
     </Parents>
   );
 }
