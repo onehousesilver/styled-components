@@ -32,10 +32,8 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   animation: ${rotation} 1s linear infinite;
-  ${Emoji} {
-    &:hover {
-      font-size: 90px;
-    }
+  ${Emoji}:hover {
+    font-size: 90px;
   }
 `;
 
