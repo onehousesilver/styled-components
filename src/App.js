@@ -18,6 +18,10 @@ const rotation = keyframes`
     transform: rotate(360deg);
     border-radius: 0px;
   }
+  `;
+
+const Emoji = styled.span`
+  font-size: 36px;
 `;
 
 const Box = styled.div`
@@ -28,13 +32,9 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   animation: ${rotation} 1s linear infinite;
-  span {
-    font-size: 36px;
+  ${Emoji} {
     &:hover {
-      font-size: 50px;
-    }
-    &:active {
-      opacity: 0;
+      font-size: 90px;
     }
   }
 `;
@@ -43,7 +43,7 @@ function App() {
   return (
     <Wrapper>
       <Box>
-        <span>😊</span>
+        <Emoji>😊</Emoji>
       </Box>
     </Wrapper>
   );
