@@ -4,14 +4,8 @@ const Parents = styled.div`
   display: flex;
 `;
 
-const ChildOne = styled.div`
-  background-color: teal;
-  width: 100px;
-  height: 100px;
-`;
-
-const ChildTwo = styled.div`
-  background-color: tomato;
+const Child = styled.div`
+  background-color: ${(props) => props.bgColor};
   width: 100px;
   height: 100px;
 `;
@@ -23,10 +17,8 @@ const Text = styled.span`
 function App() {
   return (
     <Parents>
-      <ChildOne>
-        <Text> Hello</Text>
-      </ChildOne>
-      <ChildTwo />
+      <Child bgColor="teal" />
+      <Child bgColor="tomato" />
     </Parents>
   );
 }
