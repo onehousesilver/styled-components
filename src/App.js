@@ -2,6 +2,11 @@ import styled, { keyframes } from "styled-components";
 
 const Wrapper = styled.div`
   display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: ${(props) => props.theme.backgroundColor};
 `;
 
 const rotation = keyframes`
@@ -37,12 +42,13 @@ const Box = styled.div`
   }
 `;
 
+const Title = styled.h1`
+  color: ${(props) => props.theme.textColor};
+`;
 function App() {
   return (
     <Wrapper>
-      <Box>
-        <Emoji>😊</Emoji>
-      </Box>
+        <Title>Hello</Title>
     </Wrapper>
   );
 }
